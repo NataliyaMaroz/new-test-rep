@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: ci-part
     steps:
-      - name: Configure the credentials
+      - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v3
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
