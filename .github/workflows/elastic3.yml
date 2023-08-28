@@ -57,5 +57,5 @@ jobs:
       - name: Deploy new App
         run: aws elasticbeanstalk update-environment --environment-name ${{ env.EB_ENVIRONMENT_NAME }} --version-label "Version-${{ github.sha }}"
 
-      - name Print message
+      - name: Print message
         run: echo "Great job! Workflow is done!"     
