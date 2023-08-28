@@ -1,6 +1,6 @@
 name: CI/CD Pipeline for AWS ElasticBeanstalk
 env:
-  EB_PACKAGE_S3_BUCKET_NAME: "na-bucket"
+  EB_PACKAGE_S3_BUCKET_NAME: "elasticbeanstalk-eu-central-1-431384745395"
   EB_APPLICATION_NAME: "nat_gitact"
   EB_ENVIRONMENT_NAME: "nat_gitact-env"
   DEPLOY_PACKAGE_NAME: "php_Nataliya_${{ github.sha }}.zip"
