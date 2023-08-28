@@ -41,8 +41,8 @@ jobs:
       - name: Configure the credentials
         uses: aws-actions/configure-aws-credentials@v3
         with:
-          aws-access-key: ${{ vars.AWS_ACCESS_KEY }}
-          aws-secret-key: ${{ vars.AWS_SECRET_KEY }}
+          aws-access-key-id: ${{ vars.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ vars.AWS_SECRET_KEY }}
           aws-region: ${{ env. AWS_REGION_NAME }}
       
       - name: CReate new App
